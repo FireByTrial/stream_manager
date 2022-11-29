@@ -1,0 +1,24 @@
+[project]
+name = "stream_manager"
+description = "OBS Socket Helper for Youtube"
+version = "1.0.0"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "James Oliver" },
+]
+dependencies = [
+    "obsws-python~=1.3.0",
+    "tomli >= 2.0.1;python_version < '3.11'"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # list of folders that contain the packages (["."] by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/FireByTrial/stream_manager"
